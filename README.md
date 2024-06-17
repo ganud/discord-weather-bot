@@ -1,4 +1,4 @@
-A single-command discord bot using WeatherAPI to help my learn TypeScript.
+A single-command discord bot using WeatherAPI to help me learn TypeScript.
 ![showcase](https://i.imgur.com/rOQJWJ1.png)
 
 I'm glad I took the TypeScript pill, automatically generating intellisense from JSON responses using interfaces would've saved me a lot of needless back and forth querying.
