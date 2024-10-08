@@ -6,7 +6,7 @@ import {
   EmbedBuilder,
 } from "discord.js";
 
-async function getEmbed(location: string) {
+async function getEmbed(location: string): Promise<EmbedBuilder> {
   try {
     const response = await fetch(
       `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`,
@@ -45,7 +45,7 @@ async function getEmbed(location: string) {
           inline: true,
         }
       )
-      .setThumbnail("https://cdn.weatherapi.com/weather/64x64/day/116.png")
+      .setThumbnail(`https:${weatherData.current.condition.icon}`)
       .setColor("#00b0f4")
       .setFooter({
         text: "Weatherbot",
